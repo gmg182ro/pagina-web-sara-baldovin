@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pagina WEB - Sara Baldovin</title>
+
+  <!-- Font Awesome pentru iconite -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <style>
+    body{
+      margin:0;
+      font-family: Arial, Helvetica, sans-serif;
+      background:#0b1220;
+      color:#eef3ff;
+    }
+
+    header{
+      position:sticky;
+      top:0;
+      background:#0e1a33;
+      border-bottom:1px solid #2a3555;
+      z-index:10;
+    }
+
+    .header-inner{
+      max-width:1100px;
+      margin:auto;
+      padding:15px;
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:space-between;
+      align-items:center;
+      gap:10px;
+    }
+
+    h1{ margin:0; font-size:18px; }
+
+    nav a{
+      text-decoration:none;
+      color:#eef3ff;
+      border:1px solid #2a3555;
+      padding:8px 14px;
+      border-radius:20px;
+      font-size:13px;
+      margin:3px;
+      display:inline-flex;
+      align-items:center;
+      gap:6px;
+    }
+
+    nav a:hover{ background:#1b2d55; }
+
+    .layout{
+      max-width:1100px;
+      margin:auto;
+      padding:20px;
+      display:grid;
+      grid-template-columns:1fr 260px;
+      gap:20px;
+    }
+
+    section{
+      background:#121f3d;
+      border:1px solid #2a3555;
+      border-radius:12px;
+      padding:18px;
+      margin-bottom:18px;
+    }
+
+    h2{ margin-top:0; }
+
+    ul{ margin-left:20px; }
+
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin-top:10px;
+      font-size:13px;
+    }
+
+    th, td{
+      border:1px solid #2a3555;
+      padding:8px;
+    }
+
+    th{ background:#1b2d55; }
+
+    iframe{ width:100%; border-radius:10px; margin-top:10px; }
+
+    aside{
+      background:#121f3d;
+      border:1px solid #2a3555;
+      border-radius:12px;
+      padding:15px;
+      height:fit-content;
+    }
+
+    aside a{
+      display:block;
+      margin-bottom:12px;
+      text-decoration:none;
+      color:#eef3ff;
+      border:1px solid #2a3555;
+      padding:10px;
+      border-radius:12px;
+      text-align:center;
+    }
+
+    aside a i{ margin-right:6px; }
+
+    form{
+      max-width:450px;
+      display:grid;
+      gap:10px;
+    }
+
+    input, textarea{
+      padding:8px;
+      border-radius:6px;
+      border:1px solid #2a3555;
+      background:#0b1220;
+      color:#eef3ff;
+    }
+
+    button{
+      padding:10px;
+      border:none;
+      border-radius:20px;
+      background:#3a6bff;
+      color:white;
+      cursor:pointer;
+    }
+
+    footer{
+      max-width:1100px;
+      margin:auto;
+      padding:20px;
+      font-size:12px;
+      color:#b9c6ea;
+    }
+
+    @media(max-width:900px){
+      .layout{ grid-template-columns:1fr; }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="header-inner">
+    <h1>Pagina WEB - Sara Baldovin</h1>
+
+    <nav>
+      <a href="#despre"><i class="fa-solid fa-user"></i> DESPRE MINE</a>
+      <a href="#proiecte"><i class="fa-solid fa-folder-open"></i> PROIECTE</a>
+      <a href="#activitati"><i class="fa-solid fa-list-check"></i> ACTIVITĂȚI</a>
+      <a href="#media"><i class="fa-solid fa-photo-film"></i> MEDIA</a>
+      <a href="#contact"><i class="fa-solid fa-envelope"></i> CONTACT</a>
+    </nav>
+  </div>
+</header>
+
+<div class="layout">
+
+<main>
+
+<section id="despre">
+  <h2>DESPRE MINE</h2>
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor
+    incididunt ut labore et dolore magna aliqua.
+  </p>
+</section>
+
+<section id="proiecte">
+  <h2>PROIECTE ȘCOALĂ</h2>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+
+  <h3>📌 Listă proiecte</h3>
+  <ul>
+    <li>Pagină Web HTML</li>
+    <li>Prezentare Canva</li>
+    <li>Proiect PowerPoint</li>
+    <li>Document Word</li>
+  </ul>
+
+  <h3>📊 Tabel proiecte</h3>
+  <table>
+    <tr>
+      <th>Proiect</th>
+      <th>Materia</th>
+      <th>Clasa</th>
+    </tr>
+    <tr>
+      <td>Pagină Web</td>
+      <td>TIC</td>
+      <td>IX</td>
+    </tr>
+    <tr>
+      <td>Canva</td>
+      <td>TIC</td>
+      <td>IX</td>
+    </tr>
+  </table>
+</section>
+
+<section id="activitati">
+  <h2>ACTIVITĂȚI</h2>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+</section>
+
+<section id="media">
+  <h2>MEDIA</h2>
+  <p>Lorem ipsum dolor sit amet.</p>
+
+  <iframe height="315"
+    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+    allowfullscreen>
+  </iframe>
+</section>
+
+<section id="contact">
+  <h2>CONTACT</h2>
+
+  <form>
+    <input type="text" placeholder="Nume" required>
+    <input type="email" placeholder="Email" required>
+    <textarea rows="4" placeholder="Mesaj"></textarea>
+    <button type="submit">Trimite</button>
+  </form>
+</section>
+
+</main>
+
+<aside>
+  <a href="https://www.youtube.com/" target="_blank">
+    <i class="fa-brands fa-youtube"></i> YouTube
+  </a>
+
+  <a href="https://calendar.google.com/" target="_blank">
+    <i class="fa-solid fa-calendar-days"></i> Google Calendar
+  </a>
+
+  <a href="https://www.google.com/maps/search/?api=1&query=Aleea+Potaisa+Sector+6+Bucuresti"
+     target="_blank">
+    <i class="fa-solid fa-location-dot"></i> Hartă locație
+  </a>
+
+  <a href="https://www.facebook.com/" target="_blank">
+    <i class="fa-brands fa-facebook"></i> Facebook
+  </a>
+</aside>
+
+</div>
+
+<footer>
+  © <span id="year"></span> • Pagina WEB – Sara Baldovin • Clasa a IX-a
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
