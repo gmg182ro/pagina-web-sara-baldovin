@@ -148,6 +148,23 @@ section{
     @media(max-width:900px){
       .layout{ grid-template-columns:1fr; }
     }
+    /* Offset anchor jumps for sticky header (robust fix) */
+:root{
+  --header-offset: 90px; /* adjust: 90 / 110 / 130 */
+}
+
+/* Helps many browsers */
+html{
+  scroll-padding-top: var(--header-offset);
+}
+
+/* Fallback: when a section is the target, create a top offset */
+section:target::before{
+  content: "";
+  display: block;
+  height: var(--header-offset);
+  margin-top: calc(-1 * var(--header-offset));
+}
   </style>
 </head>
 
@@ -271,5 +288,6 @@ section{
 
 </body>
 </html>
+
 
 
