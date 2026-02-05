@@ -62,13 +62,16 @@
       gap:20px;
     }
 
-    section{
-      background:#121f3d;
-      border:1px solid #2a3555;
-      border-radius:12px;
-      padding:18px;
-      margin-bottom:18px;
-    }
+section{
+  background:#121f3d;
+  border:1px solid #2a3555;
+  border-radius:12px;
+  padding:18px;
+  margin-bottom:18px;
+
+  /* NEW: fixes menu jump being hidden under sticky header */
+  scroll-margin-top: 90px;
+}
 
     h2{ margin-top:0; }
 
@@ -268,4 +271,5 @@
 
 </body>
 </html>
+
 
